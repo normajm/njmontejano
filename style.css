@@ -7,20 +7,22 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif; /* can changr searching google fonts*/
+    --ff-primary: 'Assistant', sans-serif;; /* can changr searching google fonts*/
     --ff-secondary: 'Source Code Pro', monospace;
+
     --fw-reg: 300; /* font weight*/
-    --fw-bold: 900;
-    --clr-light: #fff; /*color background*/
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --fw-bold: 1000;
+
+    --clr-light: #f0e4d4; /*color background*/
+    --clr-dark: #917b56;
+    --clr-accent: #d18063;
+
     /*font size*/
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 
-        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 /* may have to change 800 depending on screen*/
 @media (min-width: 800px) {
@@ -73,7 +75,7 @@ strong{
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -127,12 +129,20 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro {
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
+}
+
+
+.section__subtitle--about {
+    background: var(--clr-accent);
+    color: var(--clr-light); /* had to add this because when window shrunk the color changed*/
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
 .section__subtitle--work {
@@ -266,6 +276,7 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    color: var(--clr-light);/* had to add color here because when window minimized color changed */
 }
 
 @media (min-width: 600px) {
@@ -289,10 +300,11 @@ header {
     /* layout */
     .section__subtitle--intro {
         align-self: start;
+        color: var(--clr-light);
         grid-column: -1 / 1;
         grid-row: 2; /* to get it to overlap */
         text-align: right;
-        position: relative;/* to have it to go under and to other side of image*/
+        position: relative; /* to have it to go under and to other side of image*/
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
@@ -373,11 +385,12 @@ header {
     .section__subtitle--about {
         grid-column: 1 / -1; /* goes from one side to the other side */
         grid-row: 2;
+        color: var(--clr-light);
         position: relative;
         left: -1em;
         width: calc(100% + 2em);
         padding-left: 1em;
-        padding-right: calc(200px + 4em);/* keeps text from touching image*/
+        padding-right: calc(200px + 4em); /* keeps text from touching image*/
     }
 
     .about-me__img { /* to make sure image is always on top*/
@@ -425,7 +438,7 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
+    background: #f9d9ca;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
