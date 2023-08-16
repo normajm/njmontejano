@@ -312,7 +312,10 @@ header {
 
 /*  My services section  */
 
+
+
 .my-services {
+    display: none;
     background-color: var(--clr-dark); /*add color incage image does not load*/
     background-image: url(././img/services-bg.jpg);
     background-size: cover;
@@ -359,6 +362,7 @@ header {
 }
 
 .about-me {
+    display: none;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -369,8 +373,9 @@ header {
 
 @media (min-width: 600px) {
     .about-me {
+        display: none;
         display: grid;
-        grid-template-columns: 1fr 200px;/* may have to change px  depending on image size i will use*/
+        grid-template-columns: 1fr 200px; /* may have to change px  depending on image size i will use*/
         grid-template-areas:
             "title img"
             "subtitle img"
@@ -402,6 +407,7 @@ header {
 
 /* My Work Section */
 .my-work {
+    display: none;
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
