@@ -362,7 +362,6 @@ header {
 }
 
 .about-me {
-    display: none;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -373,7 +372,6 @@ header {
 
 @media (min-width: 600px) {
     .about-me {
-        display: none;
         display: grid;
         grid-template-columns: 1fr 200px; /* may have to change px  depending on image size i will use*/
         grid-template-areas:
