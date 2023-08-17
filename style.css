@@ -13,9 +13,9 @@
     --fw-reg: 300; /* font weight*/
     --fw-bold: 1000;
 
-    --clr-light: #f0e4d4; /*color background*/
-    --clr-dark: #917b56;
-    --clr-accent: #d18063;
+    --clr-light: #ffffff; /*color background*/
+    --clr-dark: #000000;
+    --clr-accent: #000000;
 
     /*font size*/
     --fs-h1: 3rem;
@@ -65,7 +65,7 @@ strong{
 
 
 :focus { /* add focus*/
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid salmon; /* this one used for the selec button when we tab */
     outline-offset: 3px;
 }
 
@@ -74,7 +74,7 @@ strong{
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
+    background: var(--clr-accent); 
     color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
@@ -196,7 +196,7 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: salmon;
 }
 
 .nav-toggle {
@@ -239,7 +239,7 @@ header {
     .hamburger,
     .hamburger::before,
     .hamburger::after {
-        background: var(--clr-accent);
+        background: salmon;
         width: 2em;
         height: 3px;
         border-radius: 1em;
@@ -442,7 +442,7 @@ header {
 /* footer */
 
 .footer {
-    background: #f9d9ca;
+    background: var(--clr-light);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
