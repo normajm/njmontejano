@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to make sure size is correct on diff devices -->
+
+    <title> About Norma Jean </title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">  <!-- "normalize" even out diff between browsers"  -->
+    <link rel="stylesheet" id="font-awesome-official-css"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          type="text/css" media="all"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+          crossorigin="anonymous">
+
+    <!-- Update these with your own fonts, can change out numbers 300, 500 etc -->
+    <!-- will have to add font to each .html doc already made-->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Inconsolata:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <!--<img src="img/devjane.png" alt=""> -->
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="aboutme.html" class="nav__link">About me</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About me </h2>
+        <p class="section__subtitle section__subtitle--about">From Med to Tech</p>
+
+        <div class="about-me__body">
+            <!--If i add more text here I will have to adjust @media .about me in .css file -->
+            <p>Hello there! I reside in the DFW metroplex and have years of experience in the medical field. A few years back my organizations transitioned to a new EHR system which sparked an interest in technology. And here I am, with a degree in software engineering. :D </p>
+            <p>When away from this screen you can find me tending to my houseplants, hanging out with Ruger at the dog park, riding my bicycle, or playing videogames with my siblings. <3  </p>
+            <p>- <strong>Norma Jean </strong></p>
+        </div>
+
+        <img src="img/norma-01.jpg" alt="Norma portrait" class="about-me__img">
+
+        <br />
+        <div>
+            <a href="index.html" class="btn">Home</a>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <!--<a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a> -->
+        <ul class="social-list">
+
+            <!--<li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>-->
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/njmontejano/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a><!-- Had to adjust from fa brand to fab above-->
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/normajm">
+                    <i class="fab fa-github"></i>
+                </a><!-- Had to adjust from fa regular to far above-->
+            </li>
+            <!--
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com">
+                    <i class="far fa-address-card"></i>
+                </a>
+            </li>
+            -->
+        </ul>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
+
+
+
+
